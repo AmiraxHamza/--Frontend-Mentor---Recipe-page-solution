@@ -24,7 +24,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/recipe-page-using-css-custom-properties-PE4WUGZ6Fd
 - Live Site URL: (https://amiraxhamza.github.io/--Frontend-Mentor---Recipe-page-solution/)
 
 ### Built with
