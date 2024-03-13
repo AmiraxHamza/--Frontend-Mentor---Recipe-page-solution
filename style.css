@@ -1,0 +1,282 @@
+/* GENERAL */
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --NUTMEG: hsl(14, 45%, 36%);
+    --BIG-FONT: 32px;
+    --SMALL-FONT: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'outfit', sans-serif;
+    color: hsl(30, 10%, 34%);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.bold {
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--NUTMEG);
+    font-size: 28px;
+}
+
+img {
+    width: 100vw;
+    height: 170px;
+}
+
+.prep li::marker,
+.ingredients li::marker {
+    list-style-type: disc;
+    font-size: 13px;
+}
+
+.prep li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients li::marker {
+    color: var(--NUTMEG);
+}
+
+/* ARTICLE */
+
+h1 {
+    font-size: 36px;
+    color: hsl(24, 5%, 18%);
+    padding: 2rem;
+    line-height: 35px;
+}
+
+p {
+    font-size: var(--SMALL-FONT);
+    padding: 0 2rem;
+}
+
+/* PREP */
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    height: 185px;
+    width: 311px;
+    border-radius: 5%;
+    margin: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.prep ul {
+    color: hsl(30, 10%, 34%);
+    font-size: var(--SMALL-FONT);
+    padding: 0 1.5rem;
+}
+
+.prep li {
+    padding: 0.3rem 1rem;
+}
+
+/* INGREDIENTS */
+
+.ingredients h2 {
+    padding: 0 2rem 1rem 2rem;
+}
+
+.ingredients ul {
+    font-size: var(--SMALL-FONT);
+    margin: 0 1rem;
+    padding: 0 2.3rem;
+}
+
+.ingredients li {
+    padding: 0.5rem 1rem;
+}
+
+/* HORIZONTAL RULE */
+
+hr {
+    width: 85vw;
+    height: 1px;
+    margin: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.4;
+}
+
+/* INSTRUCTIONS */
+
+.instructions h2 {
+    padding: 0 2rem 1rem 2rem;
+}
+
+.instructions ol {
+    padding: 0 2rem 0 3rem;
+    font-size: var(--SMALL-FONT);
+}
+
+.instructions li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.instructions li::marker {
+    color: var(--NUTMEG);
+    font-weight: bold;
+}
+
+/* NUTRITION */
+
+.nutrition {
+    padding-bottom: 2rem;
+}
+
+.nutrition h2 {
+    padding: 0 2rem;
+}
+
+.nutrition p {
+    padding: 1.5rem 2rem 0.5rem 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 85vw;
+    margin: 0 2rem;
+    align-self: center;
+}
+
+td {
+    padding: 1rem 3rem 1rem 2rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove td {
+    border-bottom: none;
+}
+
+.values {
+    color: var(--NUTMEG);
+    font-weight: 800;
+    padding-right: 5rem;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--NUTMEG);
+}
+
+/* MEDIA QUARIES */
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        padding: 2rem;
+        font-size: var(--BIG-FONT);
+    }
+
+    img {
+        height: 580px;
+        width: 90vw;
+        margin: 2rem;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 78px;
+        line-height: normal;
+        padding-bottom: 0;
+    }
+
+    p {
+        font-size: var(--BIG-FONT);
+        padding: 2rem;
+    }
+
+    .prep li::marker,
+    .ingredients li::marker {
+        font-size: 20px;
+    }
+
+    .prep {
+        width: 90vw;
+        height: 300px;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .prep ul {
+        font-size: var(--BIG-FONT);
+        margin-left: 1rem;
+    }
+
+    .prep li {
+        padding: 0.5rem 2rem;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .ingredients ul {
+        font-size: var(--BIG-FONT);
+    }
+
+    hr {
+        width: 90vw;
+    }
+
+    .instructions ol {
+        font-size: var(--BIG-FONT);
+        padding-left: 4.5rem;
+    }
+
+    .instructions li {
+        padding-left: 2.3rem;
+    }
+
+    .attribution {
+        font-size: 25px;
+    }
+}
