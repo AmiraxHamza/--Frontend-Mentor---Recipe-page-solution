@@ -12,7 +12,7 @@
 
 :root {
     --NUTMEG: hsl(14, 45%, 36%);
-    --BIG-FONT: 32px;
+    --BIG-FONT: 19px;
     --SMALL-FONT: 16px;
 }
 
@@ -23,11 +23,19 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(30, 54%, 90%);
     font-family: 'outfit', sans-serif;
     color: hsl(30, 10%, 34%);
     width: 100vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
 }
 
 
@@ -205,45 +213,53 @@ td {
 
 /* MEDIA QUARIES */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
     body {
-        padding: 2rem;
         font-size: var(--BIG-FONT);
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    main {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+        margin: 5rem;
+        padding: 1rem;
+        width: 900px;
     }
 
     img {
-        height: 580px;
-        width: 90vw;
-        margin: 2rem;
-        border-radius: 20px;
+        height: 400px;
+        width: 860px;
+        border-radius: 50px;
+        padding: 2rem;
     }
 
     h1 {
-        font-size: 78px;
+        font-size: 48px;
         line-height: normal;
-        padding-bottom: 0;
+        padding: 0 2rem;
     }
 
     p {
         font-size: var(--BIG-FONT);
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
     }
 
     .prep li::marker,
     .ingredients li::marker {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .prep {
-        width: 90vw;
-        height: 300px;
-        border-radius: 20px;
+        width: 92%;
+        height: 230px;
+        border-radius: 18px;
         padding: 2rem;
     }
 
     h3 {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .prep ul {
@@ -256,7 +272,7 @@ td {
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .ingredients ul {
@@ -264,7 +280,7 @@ td {
     }
 
     hr {
-        width: 90vw;
+        width: 92%;
     }
 
     .instructions ol {
@@ -276,7 +292,11 @@ td {
         padding-left: 2.3rem;
     }
 
+    table {
+        width: 92%;
+    }
+
     .attribution {
-        font-size: 25px;
+        font-size: 19px;
     }
 }
